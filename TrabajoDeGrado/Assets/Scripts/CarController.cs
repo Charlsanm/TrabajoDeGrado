@@ -20,8 +20,8 @@ public class CarController : MonoBehaviour
     public Transform rearRightWheelTransform;
 
     public float maxSteeringAngle = 30f;
-    public float motorForce = 50f;
-    public float brakeForce = 0f;
+    public float motorForce = 5000f;
+    public float brakeForce = 50f;
 
 
     private void FixedUpdate()
@@ -49,7 +49,9 @@ public class CarController : MonoBehaviour
     private void HandleMotor()
     {
         frontLeftWheelCollider.motorTorque = verticalInput * (motorForce*5);
-        frontRightWheelCollider.motorTorque = verticalInput * motorForce;
+        frontRightWheelCollider.motorTorque = verticalInput * (motorForce*5);
+        rearLeftWheelCollider.motorTorque = verticalInput * (motorForce*5);
+        rearRightWheelCollider.motorTorque = verticalInput * (motorForce*5);
 
         brakeForce = isBreaking ? 3000f : 0f;
         frontLeftWheelCollider.brakeTorque = brakeForce;
