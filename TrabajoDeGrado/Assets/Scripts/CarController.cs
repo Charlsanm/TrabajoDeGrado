@@ -77,4 +77,7 @@ public class CarController : MonoBehaviour
         trans.position = pos;
     }
 
+    public void fuerzaMotor(float value){
+        motorForce = value;
+    }
 }
