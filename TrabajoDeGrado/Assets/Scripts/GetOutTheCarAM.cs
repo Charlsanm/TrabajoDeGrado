@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetOutTheCar : MonoBehaviour
+public class GetOutTheCarAM : MonoBehaviour
 {
     public GameObject camPlayer;
     public GameObject camCar;
@@ -13,7 +13,7 @@ public class GetOutTheCar : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        GameObject.Find("firetruck").GetComponent<CarController>().enabled = false;
+        GameObject.Find("ambulance").GetComponent<CarController>().enabled = false;
     }
 
     // Update is called once per frame
@@ -25,8 +25,8 @@ public class GetOutTheCar : MonoBehaviour
                 camCar.SetActive(false);
                 //Instantiate(player, respawn.transform.position, respawn.transform.rotation);
                 player.SetActive(true);
-                this.gameObject.tag = "Car";
-                GameObject.Find("firetruck").GetComponent<CarController>().enabled = false;
+                this.gameObject.tag = "Car1";
+                GameObject.Find("ambulance").GetComponent<CarController>().enabled = false;
                 this.enabled = false;
             }
     }

@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class GetOnTheCar : MonoBehaviour
+public class GetOnTheCarCarro : MonoBehaviour
 {
     public GameObject text;
     public GameObject camPlayer;
     public GameObject camCar;
     private GameObject player;
     private GameObject car;
-    private GetOutTheCar scriptGetOut;
+    private GetOutTheCarCarro scriptGetOutCarro;
 
 
     // Start is called before the first frame update
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        car = GameObject.FindGameObjectWithTag("Car");
-        scriptGetOut = car.GetComponent<GetOutTheCar>();
+        car = GameObject.FindGameObjectWithTag("Car2");
+        scriptGetOutCarro = car.GetComponent<GetOutTheCarCarro>();
 
-        GameObject.Find("firetruck").GetComponent<CarController>().enabled = true;
+        GameObject.Find("police_car").GetComponent<CarController>().enabled = false;
 
         text.SetActive(false);
     }
@@ -28,12 +28,7 @@ public class GetOnTheCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         player = GameObject.FindGameObjectWithTag("Player");
-    }
-
-    private void FixedUpdate(){
-       
     }
 
     private void OnTriggerEnter(Collider other){
@@ -54,8 +49,8 @@ public class GetOnTheCar : MonoBehaviour
                 //Destroy(player);
                 player.SetActive(false);
                 car.tag = "Player";
-                GameObject.Find("firetruck").GetComponent<CarController>().enabled = true;
-                scriptGetOut.enabled = true;
+                GameObject.Find("police_car").GetComponent<CarController>().enabled = true;
+                scriptGetOutCarro.enabled = true;
             }
         }
     }

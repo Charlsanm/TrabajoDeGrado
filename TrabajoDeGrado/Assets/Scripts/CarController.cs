@@ -29,15 +29,13 @@ public class CarController : MonoBehaviour
     public Text velocidad;
     [SerializeField] TextMeshProUGUI velocidadActual;
     private float speed;
+
     
     private void Start(){
         velocidad.text = "" + motorForce;
         rbcarro = GetComponent<Rigidbody>();
     }
-
-    void Update()
-    {
-    }
+    
 
     private void FixedUpdate()
     {

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Vehicle
   - Car
+  - Car1
+  - Car2
   layers:
   - Default
   - TransparentFX
