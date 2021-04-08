@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7186362235289923678}
   - component: {fileID: 4926904084376323220}
   - component: {fileID: 6145647731863675197}
-  - component: {fileID: 8566606011301065841}
+  - component: {fileID: 3780874990828270192}
   - component: {fileID: 2829125253458865913}
   m_Layer: 0
   m_Name: Wood_BoatV1
@@ -96,7 +96,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6717044640063268569, guid: 8b9c2549002de7a4fbba40dfaf37b661, type: 3}
---- !u!114 &8566606011301065841
+--- !u!114 &3780874990828270192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6872243824899630401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: befd55f07191f484fa8b8e202637a7af, type: 3}
+  m_Script: {fileID: 11500000, guid: fc2e90a37de784c2eba2bf3834a72fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerOfMassOffset: {x: 0, y: 0, z: 0}
-  buoyancyMesh: {fileID: 0}
+  camPlayer: {fileID: 0}
+  camCar: {fileID: 0}
+  player: {fileID: 0}
+  respawn: {fileID: 0}
 --- !u!54 &2829125253458865913
 Rigidbody:
   m_ObjectHideFlags: 0

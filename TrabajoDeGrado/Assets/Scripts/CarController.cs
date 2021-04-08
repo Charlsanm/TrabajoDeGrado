@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CarController : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class CarController : MonoBehaviour
     private float verticalInput;
     private float steerAngle;
     private bool isBreaking;
+    private Rigidbody rbcarro;
 
     public WheelCollider frontLeftWheelCollider;
     public WheelCollider frontRightWheelCollider;
@@ -20,9 +23,19 @@ public class CarController : MonoBehaviour
     public Transform rearRightWheelTransform;
 
     public float maxSteeringAngle = 30f;
-    public float motorForce = 5000f;
+    public float motorForce = 0;
     public float brakeForce = 50f;
 
+    public Text velocidad;
+    [SerializeField] TextMeshProUGUI velocidadActual;
+    private float speed;
+
+    
+    private void Start(){
+        velocidad.text = "" + motorForce;
+        rbcarro = GetComponent<Rigidbody>();
+    }
+    
 
     private void FixedUpdate()
     {
@@ -30,6 +43,9 @@ public class CarController : MonoBehaviour
         HandleMotor();
         HandleSteering();
         UpdateWheels();
+
+        speed = Mathf.RoundToInt(rbcarro.velocity.magnitude * 3600 / 1000);
+        velocidadActual.SetText("Velocidad: " + speed + " km/h");
     }
 
     private void GetInput()
@@ -79,5 +95,6 @@ public class CarController : MonoBehaviour
 
     public void fuerzaMotor(float value){
         motorForce = value;
+        velocidad.text = "" + motorForce;
     }
 }

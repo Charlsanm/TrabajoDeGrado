@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectController : MonoBehaviour
+public class ColliderMuro : MonoBehaviour
 {
     private Reloj reloj;
 
@@ -10,6 +10,7 @@ public class ObjectController : MonoBehaviour
     void Start()
     {
         reloj = FindObjectOfType<Reloj>();
+        reloj.Pausar();
     }
 
     // Update is called once per frame
@@ -18,9 +19,9 @@ public class ObjectController : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.tag == "isla" ){
-            reloj.Pausar();
+    void OnTriggerEnter(Collider other) {
+        if(other.gameObject.CompareTag("Vehicle")){
+            reloj.Continuar();
         }
     }
 }
