@@ -30,7 +30,7 @@ public class OptionsPause : MonoBehaviour
         //masa.SetActive(false);
         //boton.SetActive(false);
         canvas.SetActive(false);
-        canvasPrincipal.SetActive(true);
+        //canvasPrincipal.SetActive(true);
         fuerzaField = fuerza.GetComponent<InputField>();
         dropdown = masa.GetComponent<Dropdown>();
         rbCaja = caja.GetComponent<Rigidbody>();
