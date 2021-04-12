@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class VelocidadCaja : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class VelocidadCaja : MonoBehaviour
 
     private void FixedUpdate()
     {
-        velocidad.SetText("Velocidad: " + Mathf.RoundToInt(rbCaja.velocity.magnitude) + " m/s2");
+        //velocidad.SetText("Velocidad: " + Mathf.RoundToInt(rbCaja.velocity.magnitude) + " m/s2");
+        velocidad.SetText("Velocidad: " + Math.Round(rbCaja.velocity.magnitude, 2) + " m/s2");
     }
 }

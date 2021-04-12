@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityStandardAssets.CrossPlatformInput;
+
+
 
 public class Fuerzas : MonoBehaviour
 {
-
-    public float force = 50f;
-
-    public Animator animator;
-
     [SerializeField] TextMeshProUGUI tiempoText;
     public float tiempo = 0.0f;
+    //public ThirdPersonCharacter m_Character;
 
 /*
     void OnControllerColliderHit(ControllerColliderHit hit) {
@@ -24,12 +23,6 @@ public class Fuerzas : MonoBehaviour
     }
     */
 
-    void Update(){
-        bool crouch = Input.GetKey(KeyCode.Z);
-
-        animator.SetBool("Empujar", crouch);
-        
-    }
 
 
     void OnTriggerStay(Collider other){
@@ -47,11 +40,13 @@ public class Fuerzas : MonoBehaviour
             body.AddForce(transform.forward * force);
             print("Moviendo");
             */
+
+            //m_Character.s
+            //m_Character.Move(new Vector3(), false, false, true);
+
             tiempo += Time.deltaTime;
             tiempoText.SetText(tiempo.ToString("f0") + " seg");
         }
-
-        animator.SetBool("Pushing", false);
     }
 
 }
