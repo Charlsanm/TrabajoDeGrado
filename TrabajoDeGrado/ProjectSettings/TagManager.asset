@@ -8,6 +8,9 @@ TagManager:
   - Car
   - Car1
   - Car2
+  - isla
+  - Agua
+  - Muro
   layers:
   - Default
   - TransparentFX
