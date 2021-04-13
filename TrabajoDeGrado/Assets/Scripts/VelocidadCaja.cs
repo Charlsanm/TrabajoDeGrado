@@ -18,6 +18,6 @@ public class VelocidadCaja : MonoBehaviour
     private void FixedUpdate()
     {
         //velocidad.SetText("Velocidad: " + Mathf.RoundToInt(rbCaja.velocity.magnitude) + " m/s2");
-        velocidad.SetText("Velocidad: " + Math.Round(rbCaja.velocity.magnitude, 2) + " m/s2");
+        velocidad.SetText("Velocidad: " + Math.Round(rbCaja.velocity.magnitude, 1) + " m/s2");
     }
 }
