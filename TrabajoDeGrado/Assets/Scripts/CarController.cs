@@ -31,6 +31,7 @@ public class CarController : MonoBehaviour
     private float speed;
 
     
+    
     private void Start(){
         velocidad.text = "" + motorForce;
         rbcarro = GetComponent<Rigidbody>();
@@ -97,4 +98,6 @@ public class CarController : MonoBehaviour
         motorForce = value;
         velocidad.text = "" + motorForce;
     }
+
+    
 }
