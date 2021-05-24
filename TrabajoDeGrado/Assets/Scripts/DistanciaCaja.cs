@@ -6,6 +6,7 @@ using TMPro;
 public class DistanciaCaja : MonoBehaviour
 {
     public GameObject rampa;
+    public GameObject pantallaFinal;
     private Vector3 posicionRampa;
     private Vector3 posicionCaja;
     private Vector3 heading;
@@ -21,6 +22,10 @@ public class DistanciaCaja : MonoBehaviour
     void Update()
     {
         Distancia();
+        if((int)distance==0){
+            Time.timeScale = 0;
+            pantallaFinal.SetActive(true);
+        }
         textDistancia.SetText("Distancia: " + (int)distance + " mts");
     }
 

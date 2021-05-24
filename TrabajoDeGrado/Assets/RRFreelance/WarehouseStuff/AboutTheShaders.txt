@@ -1,0 +1,40 @@
+Standard Shaders
+
+Base Shader:
+Base Tint - The colour the Albedo should be multiplied by. By Default this is white so that the Albedo shows correctly.
+Albedo - The main colour texture
+ORM - Channel Packed (Ambient occlusion (RED), Roughness (GREEN), Metalness (BLUE) )
+ToggleRoughnessToGloss - Checked by default to convert the Roughness to Gloss (inverts the values)
+AO_Power - The strength of the AO
+Metalness Adjust -  Add or subtract metalness from the metalness texture (ORM)
+Gloss Adjust - Add or subtract gloss from the glossyness (/roughness to gloss) texture (ORM)
+AO_IntoAlbedo - forces the AO to show up more in the base texture colour to enhance AO shadows.
+Emissive - Self-illumination from the final colouring and texture.
+Normal Map - A normal map, make sure it is marked as normal map in the project.
+Normal Map Power - The strength of the normal map.
+Flip Green? - Whether to invert the Green channel of the normal map if it was used for UnrealEngine for example.
+
+
+Extended Shader.
+
+Similar to the Base Shader with the following Additions:
+
+Custom Colouring:
+Custom colouring amount - The amount that the custom colouring should show through
+PreAdd - How much to add to the Base texture before splitting into the Low(Black) and High(White) tones.
+PreSelfMultiply - How much to self-Multiply by before splitting into the Low(Black) and High(White) tones.
+UpColour - A colour that always lands on the top of the mesh not matter the angle.
+High Colour - the colour of the High tones
+Low Colour - the colour of the Low tones
+UpColourNoiseScale - Extra noise scale.
+UpColourNoisePower - Noise Power
+UpColourRange - How much to cover with the Up Colour
+UpColourAmount - The overall amount of the Up colour
+
+
+URP and HDRP
+Please note, shaders are provided and will flag up as issues only when used in the wrong render pipeline, they may show as failed to compile.
+To use the URP or HDRP shaders simply change the shader type of the materials. Again, make sure you are in the correct render pipeline. If
+you need help with this, please get in touch and I will be happy to help. me@robertramsay.co.uk
+
+Feel free to suggest more assets to improve this pack, this may increase the price but for current users updates are automatically free.

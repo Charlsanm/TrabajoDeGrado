@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ExtBase_BoxCovering
+  m_Shader: {fileID: 4800000, guid: 5ac88b53499445b438f959152ab1a903, type: 3}
+  m_ShaderKeywords: _TOGGLEROUGHNESSTOGLOSS_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 649f11f325b32754c895d22dba4951d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 2d6e11df49fba5a4ab6966d6a8d32450, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORM:
+        m_Texture: {fileID: 2800000, guid: 114300c4ed161d64e990a6872a124841, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AO_IntoAlbedo: 1
+    - _AO_Power: 3
+    - _CustomColouringAmount: 0.3
+    - _Emissive: 0
+    - _FlipGreen: 0
+    - _GlossAdjust: -0.7
+    - _MetalnessAdjust: -0.92
+    - _Multiplier: 0.8
+    - _NormalMap_Power: 0.34
+    - _PreAdd: 0.4
+    - _PreSelfMultiply: 0.86
+    - _ToggleRoughnessToGloss: 1
+    - _UpColourAmount: 0.71
+    - _UpColourNoisePower: 0.34
+    - _UpColourNoiseScale: 0.12
+    - _UpColourRange: 0.11
+    - __dirty: 1
+    m_Colors:
+    - _BaseTint: {r: 0.32498986, g: 0.5943396, b: 0.31399074, a: 0}
+    - _HighColour: {r: 0.12237452, g: 0.23584908, b: 0.19184422, a: 0}
+    - _LowColour: {r: 0, g: 0, b: 0, a: 0}
+    - _UpColour: {r: 0.2924528, g: 0.28077522, b: 0.25658596, a: 0}

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ExtBase_Locker
+  m_Shader: {fileID: 4800000, guid: 5ac88b53499445b438f959152ab1a903, type: 3}
+  m_ShaderKeywords: _TOGGLEROUGHNESSTOGLOSS_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: feb518fa33e305b428f01d5d4e5480dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 6e08cc628dd29564d9bc9ee45f183916, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORM:
+        m_Texture: {fileID: 2800000, guid: 3918300bf56ec6a469336d7adc1c729e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AO_IntoAlbedo: 0.51
+    - _AO_Power: 1.13
+    - _CustomColouringAmount: 0.97
+    - _Emissive: 0
+    - _FlipGreen: 0
+    - _FlipGreen1: 0
+    - _GlossAdjust: -0.3
+    - _MetalnessAdjust: 0.05
+    - _Multiplier: 0.8
+    - _NormalMap_Power: 1.34
+    - _PreAdd: 0.92
+    - _PreContrast: 0.064
+    - _PreContrastMax: 1.612
+    - _PreContrastMaxNew: 0.238
+    - _PreContrastMaxOld: 0.08
+    - _PreContrastMin: 0
+    - _PreContrastMinNew: 0.37
+    - _PreContrastMinOld: 0.1
+    - _PreSelfMultiply: 0.48
+    - _ToggleRoughnessToGloss: 1
+    - _UpColourAmount: 0.76
+    - _UpColourNoisePower: 0.74
+    - _UpColourNoiseScale: 0.25
+    - _UpColourRange: 0.83
+    - __dirty: 1
+    m_Colors:
+    - _BaseTint: {r: 1, g: 1, b: 1, a: 0}
+    - _HighColour: {r: 0.6886792, g: 0.46003142, b: 0.28586683, a: 0}
+    - _LowColour: {r: 0.16981131, g: 0.10538113, b: 0.06407974, a: 0}
+    - _UpColour: {r: 0.3018868, g: 0.18285885, b: 0.088287644, a: 0}

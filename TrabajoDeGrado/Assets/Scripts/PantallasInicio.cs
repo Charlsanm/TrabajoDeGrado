@@ -9,9 +9,11 @@ public class PantallasInicio : MonoBehaviour
     public GameObject pantalla1;
     public GameObject pantalla2;
     public GameObject pantallaPrincipal;
+    public GameObject pantallaFin;
     // Start is called before the first frame update
     void Start()
     {
+        pantallaFin.SetActive(false);
         pantalla.SetActive(true);
         pantalla1.SetActive(false);
         pantalla2.SetActive(false);

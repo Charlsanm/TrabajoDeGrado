@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ExtBase_HandTruck
+  m_Shader: {fileID: 4800000, guid: 5ac88b53499445b438f959152ab1a903, type: 3}
+  m_ShaderKeywords: _TOGGLEROUGHNESSTOGLOSS_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 86051e7b584b30f4f9ed2519053b8353, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 72c5da909ec323d4596deb06469e2a93, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORM:
+        m_Texture: {fileID: 2800000, guid: 43ed3c995c835ef46a7fac0c97360235, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AO_IntoAlbedo: 0.71
+    - _AO_Power: 2.92
+    - _CustomColouringAmount: 0.098
+    - _Emissive: 0
+    - _FlipGreen: 0
+    - _GlossAdjust: -0.8
+    - _HueMaskFuzz: 0.15
+    - _HueMaskRange: 0.75
+    - _HueShfit: 0.4664266
+    - _HueShiftvColMasked: 0.349
+    - _MetalnessAdjust: -0.43
+    - _Multiplier: 0.8
+    - _NormalMap_Power: 1
+    - _PreAdd: 0.76
+    - _PreSelfMultiply: 0.41
+    - _ToggleRoughnessToGloss: 1
+    - _UpColourAmount: 0.192
+    - _UpColourNoisePower: 0.478
+    - _UpColourNoiseScale: 0.772
+    - _UpColourRange: 0.11
+    - __dirty: 1
+    m_Colors:
+    - _BaseTint: {r: 1, g: 1, b: 1, a: 0}
+    - _HighColour: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 0}
+    - _HueMaskColour: {r: 1, g: 0, b: 0, a: 0}
+    - _LowColour: {r: 0.0754717, g: 0.04611861, b: 0.04271983, a: 0}
+    - _UpColour: {r: 0.8867924, g: 0.8489566, b: 0.7947668, a: 0}

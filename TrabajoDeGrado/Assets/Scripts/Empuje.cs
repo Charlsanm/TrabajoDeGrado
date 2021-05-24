@@ -12,6 +12,8 @@ public class Empuje : MonoBehaviour
     public GameObject cajaPeso;
     public GameObject caja;
     public GameObject player;
+    public GameObject boton;
+    public GameObject pantallaFinal;
     [SerializeField] TextMeshProUGUI velocidadCaja;
     [SerializeField] TextMeshProUGUI velocidadPlayer;
 
@@ -34,6 +36,9 @@ public class Empuje : MonoBehaviour
         rbPlayer = player.GetComponent<Rigidbody>();
         tiempoText.SetText("0 seg");
         isRun = false;
+        Time.timeScale = 1;
+        
+        pantallaFinal.SetActive(false);
     }
 
     // Update is called once per frame
@@ -71,5 +76,8 @@ public class Empuje : MonoBehaviour
         rbPlayer.AddForce(Vector3.left * fuerza, ForceMode.Impulse);
 
         isRun = true;
+
+        
+        boton.SetActive(false);
     }
 }

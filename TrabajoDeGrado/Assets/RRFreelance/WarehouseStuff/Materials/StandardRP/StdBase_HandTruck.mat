@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StdBase_HandTruck
+  m_Shader: {fileID: 4800000, guid: 4e8c314d73942ba47bd043b78bb0e734, type: 3}
+  m_ShaderKeywords: _TOGGLEROUGHNESSTOGLOSS_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 86051e7b584b30f4f9ed2519053b8353, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 72c5da909ec323d4596deb06469e2a93, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ORM:
+        m_Texture: {fileID: 2800000, guid: 43ed3c995c835ef46a7fac0c97360235, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AO_IntoAlbedo: 0.66
+    - _AO_Power: 1
+    - _Emissive: 0
+    - _FlipGreen: 0
+    - _GlossAdjust: -0.17
+    - _MetalnessAdjust: 0
+    - _Multiplier: 0.8
+    - _NormalMap_Power: 1
+    - _ToggleRoughnessToGloss: 1
+    - __dirty: 1
+    m_Colors:
+    - _BaseTint: {r: 1, g: 1, b: 1, a: 0}
