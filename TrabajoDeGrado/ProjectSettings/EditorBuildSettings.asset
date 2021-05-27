@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3ley.unity
     guid: fddc11c3c4aed584ca96e033507f4ed7
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: a6b173bd0847c445d80b0bacdece1686
   m_configObjects: {}

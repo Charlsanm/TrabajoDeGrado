@@ -23,6 +23,6 @@ public class PantallaFin : MonoBehaviour
     }
 
     public void VolverInicio(){
-
+        SceneManager.LoadScene("Inicio");
     }
 }

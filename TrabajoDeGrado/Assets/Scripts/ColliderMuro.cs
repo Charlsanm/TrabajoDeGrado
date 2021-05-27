@@ -8,12 +8,15 @@ public class ColliderMuro : MonoBehaviour
     private Reloj reloj;
     [SerializeField] TextMeshProUGUI velocidadImpacto;
     private float speed;
+    private GameObject carro;
 
-    public Rigidbody rbcarro;
+    private Rigidbody rbcarro;
 
     // Start is called before the first frame update
     void Start()
     {
+        carro = GameObject.FindWithTag("Vehicle");
+        rbcarro = carro.GetComponent<Rigidbody>();
         reloj = FindObjectOfType<Reloj>();
         reloj.Pausar();
     }
