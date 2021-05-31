@@ -1266,8 +1266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.83100003, y: 0}
   m_AnchorMax: {x: 1, y: 0.051252566}
-  m_AnchoredPosition: {x: 1.7600098, y: 0.41070557}
-  m_SizeDelta: {x: -3.4823303, y: 0.82141304}
+  m_AnchoredPosition: {x: -36.9, y: 0.41070557}
+  m_SizeDelta: {x: 73.904205, y: 0.82141113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827395281
 MonoBehaviour:
@@ -1301,7 +1301,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dise\xF1ado por Freepik"
+  m_Text: "Imagen de fondo dise\xF1ada por Freepik"
 --- !u!222 &1827395282
 CanvasRenderer:
   m_ObjectHideFlags: 0
