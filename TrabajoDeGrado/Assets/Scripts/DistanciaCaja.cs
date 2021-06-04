@@ -26,7 +26,7 @@ public class DistanciaCaja : MonoBehaviour
             Time.timeScale = 0;
             pantallaFinal.SetActive(true);
         }
-        textDistancia.SetText("Distancia: " + (int)distance + " mts");
+        textDistancia.SetText("Distancia: " + (int)distance + " m");
     }
 
     public void Distancia(){
